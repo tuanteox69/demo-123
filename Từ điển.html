@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<script>
+    a = prompt("Nhập vào một từ tiếng anh bạn muốn dịch :");
+    let viet = ['trò chơi','thích','tiếng anh',"bảng",'tối quá','kem'];
+    let anh = ['game','like','english','table','dảk','cream'];
+    let check = true;
+    for (let i = 0; i <anh.length; i++) {
+        if(a==anh[i]){
+            alert("từ này có nghĩa là: "+ viet[i]);
+            check = false;
+            break;
+        }
+    }
+    if (check){
+        alert("thử nhập lại từ khác");
+    }
+</script>
+</body>
+</html>
