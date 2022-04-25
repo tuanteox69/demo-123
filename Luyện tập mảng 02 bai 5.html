@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 02</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập chuỗi 1: ").split("");
+    let b = prompt("Nhập chuỗi 2: ").split("");
+    let check = true ;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] != b[i]) {
+            check = false;
+            break;
+        }
+    }
+    alert(check)
+</script>
+</body>
+</html>
