@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6</title>
+</head>
+<body>
+<script>
+    a = prompt("nhập vào một mảng số nguyên gồm 10 phần tử:(tách nhau bằng dấu cách)");
+    let c = a.split(' ');
+    b = prompt("nhập phần tử số nguyên V:")
+    let check = true;
+    for (let i = 0; i <c.length; i++) {
+        if(b==c[i]){
+            alert("V is in the array ");
+            check = false;
+            break;
+        }
+    }
+    if (check){
+        alert("V is not in the array");
+    }
+</script>
+</body>
+</html>
